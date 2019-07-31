@@ -1,0 +1,22 @@
+.extra-margin-md {
+  margin-top: 50px;
+}
+.btn {
+  width: 100%;
+  margin-top: 15px;
+}
+h2 {
+  text-align: center;
+}
+.card-title {
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px 15px;
+}
+.card-text {
+  font-size: 22px;
+  padding: 25px;
+}
+footer {
+  margin-top: 100px; 
+}

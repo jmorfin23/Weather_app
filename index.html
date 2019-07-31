@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+
+    <!-- Attach Bootstrap 4 css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- attach own CSS -->
+    <link rel="stylesheet" href="./static/css/main.css">
+  </head>
+  <body>
+
+  <header></header>
+
+  <!-- main section for form and cards to display info -->
+
+  <main>
+    <div class="container">
+      <div class="row extra-margin-md">
+        <div class="col-md-4 offset-md-4">
+
+        <form id="search_weather" class="form-inline" action="" method="post">
+          <input id="city_search" class="form-control" type="text" name="city" placeholder="City...">
+          <input id="submit-btn" type="submit" name="submit" class="btn btn-primary" value="Get Weather">
+        </form>
+
+        </div> <!-- end col 4 -->
+      </div> <!-- end row -->
+    </div> <!-- end container -->
+
+<!-- starts card info for weather -->
+  <div class="container extra-margin-md" id="weather-info">
+    <h2 id="city_name">Weather Info</h2>
+
+
+ <!-- Starts card info for weather -->
+      <div class="container extra-margin-md">
+        <div class="row">
+          <div class="col-md-4 offset-md-4">
+            <div class="card">
+              <div class="card-title badge-danger">High</div>
+              <div id="high" class="card-text">90&#8457;</div>
+            </div> <!-- ends card -->
+          </div> <!-- ends col 4 -->
+        </div> <!-- ends row -->
+
+        <div class="row extra-margin-md">
+          <div class="col-md-4 offset-md-4">
+            <div class="card">
+              <div class="card-title badge-success">Low</div>
+              <div id="low" class="card-text">75&#8457;</div>
+            </div> <!-- ends card -->
+          </div> <!-- ends col 4 -->
+        </div> <!-- ends row -->
+
+        <div class="row extra-margin-md">
+          <div class="col-md-4 offset-md-4">
+            <div class="card">
+              <div class="card-title badge-secondary">Forecast</div>
+              <div id="forecast" class="card-text">Cloudy with a chance of meatballs</div>
+            </div> <!-- ends card -->
+          </div> <!-- ends col 4 -->
+        </div> <!-- ends row -->
+
+        <div class="row extra-margin-md">
+          <div class="col-md-4 offset-md-4">
+            <div class="card">
+              <div class="card-title badge-primary">Humidity</div>
+              <div id="humidity" class="card-text">80%</div>
+            </div> <!-- ends card -->
+          </div> <!-- ends col 4 -->
+        </div> <!-- ends row -->
+
+      </div> <!-- ends container -->
+</div>
+
+  </main>
+
+<footer></footer>
+    <!-- Attach minified version of jQuery -->
+    <!-- Needs to be before Bootstrap, as Bootstrap relies on it -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- Attach Bootstrap 4 JS files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Attach own JS -->
+    <script type="module" src="./static/js/app.js"></script>
+  </body>
+</html>
