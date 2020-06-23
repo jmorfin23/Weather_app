@@ -49,7 +49,8 @@ $('#weather-info').css('display', 'none');
 //sending request to json page for homework
 let url1 = `https://learnwebcode.github.io/json-example/animals-1.json`;
 
-// table doesnt look pretty but did it. 
+
+// table doesnt look pretty but did it.
 //starting table for thead
 $.get(url1, function(resp) {
   console.log(resp);
@@ -87,10 +88,17 @@ $.get(url1, function(resp) {
               for (let v in u) {
                 if (keys[j] == 'dislikes') {
                   l += u[v]
-                  l+= `,`
+                  if (u.length-1 == v) {
+                  } else {
+                    l+= `, `
+                  }
                 } else {
                   l += u[v]
-                  l+= `,`
+                  if (u.length-1 == v) {
+
+                  } else {
+                    l+= `, `
+                  }
                 }
                 if (u.length-1 == v) {
                   l+= '<br>'
@@ -109,3 +117,8 @@ $.get(url1, function(resp) {
     console.log(l );
     $('#body').html(`${l}`)
 });
+
+
+
+// adding colors for likes and dislikes
+//..hm 
